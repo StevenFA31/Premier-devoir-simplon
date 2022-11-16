@@ -15,38 +15,44 @@ body {
 }
 
 .container {
-
+width: 750px;
+margin: auto;
 }
-
 
 /* Typography */
 
 h1, h2 {
-
+   font-family: 'Love Ya Like A Sister' ;
+   color: #d17f38;
+   font-size: large;
 }
 
 h1 {
-
+text-align: center;
 }
 
 h1 em {
-
+color: #4b2707;
 }
 
 h2 {
-
+text-align: start;
 }
 
 h3 {
-
+   color: #4b2707;
+font-size: 1rem;
+margin: 0;
 }
 
 p.lead {
-
+text-align: center;
+font-size: large;
 }
 
 p {
-
+color: #4b2707;
+font-size: small;
 }
 
 a:link, a:visited {
@@ -58,7 +64,12 @@ a:hover {
 }
 
 hr {
-
+   background-image: url(/images/divider.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   height: 40px;
+   width: 400px;
+   color: transparent;
 }
 
 
@@ -69,15 +80,24 @@ header nav {
 }
 
 header nav ul {
-
+   
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: baseline;
+   align-content: stretch;
+   list-style-type: none;
 }
 
 header nav ul li {
-
-}
+   padding-left: 20px;
+   width: auto;
+   height: auto; 
+} 
 
 header nav ul li a {
-
+color: #d17f38;
 }
 
 header nav ul li a:hover {
@@ -85,7 +105,10 @@ header nav ul li a:hover {
 }
 
 header nav ul li#logo a {
-
+/* background-image: url(/images/logo.png);
+background-repeat: no-repeat;
+width: auto;
+height: 300px; */
 }
 
 header nav ul li#logo a:hover {
@@ -96,36 +119,50 @@ header nav ul li#logo a:hover {
 /* Hero */
 
 #hero {
-
+background-color: #e8c04f;
 }
 
 #hero .container {
+margin: auto;
 
 }
 
 #hero .large-ribbon {
-
+background-image: url(/images/fresh-whole-ingredients.png);
+background-repeat: no-repeat;
+height: 200px;
+width: auto;
+color: transparent;
+position: absolute;
+top: 8px;
+right: 16px; 
 }
 
 
 /* The Whole Story */
 
 #story-excerpt {
-
+float: left;
+width: 50%;
 }
 
 #best-donut {
+float: right;
+width: 40%;
+margin-left: 10%;
 
-
+}
 
 /* News & Events */
 
 #articles {
-
+float: left;
+width: 50%;
 }
 
 #feature-image {
-
+float: right;
+width: 50%;
 }
 
 #news-events article {
@@ -156,23 +193,30 @@ header nav ul li#logo a:hover {
 /* Footer */
 
 footer.main {
-
+background-color: #4b2707;
+color: #f2f3ee;
 }
 
 footer.main a:hover {
-
+   color: #f2f3ee;
 }
 
 #uncopyright, #credits {
-
+   /* display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch; */
+   color: #f2f3ee;
 }
 
 #uncopyright {
-
+   color: #f2f3ee;
 }
 
 #credits {
-
+   color: #f2f3ee;
 }
 
 
@@ -187,6 +231,7 @@ footer.main a:hover {
 	}
 * html .group             { zoom: 1; } /* IE6 */
 *:first-child+html .group { zoom: 1; } /* IE7 */
+
 
 
 
